@@ -24,10 +24,26 @@ const platos=[
         precio: 'U$S 37.50'
     },
 ]
+const about= [
+    {
+        nombre: 'Pimienta & Sal',
+        descripcion: `Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur 
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute iruredolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur.`,
+        descripcion2: `Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum consectetur adipiscing
+        elit, sed do eiusmod temporincididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.`
+    }
+]
 
 const mainController={
     index: (req,res)=>{
-        return res.render('index', {listaPlatos:platos})
+        return res.render('index', {listaPlatos:platos, about:about})
     },
     detail: (req,res)=>{
         return res.render('detalleMenu')
